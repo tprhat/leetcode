@@ -1,3 +1,6 @@
+"""
+Longest Palindromic Substring
+"""
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         res = ""

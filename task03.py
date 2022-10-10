@@ -1,4 +1,6 @@
-
+"""
+Longest Substring Without Repeating Characters
+"""
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         max_len = 0
@@ -13,5 +15,3 @@ class Solution:
             if max_len < curr_len:
                 max_len = curr_len
         return max_len
-
-print(Solution.lengthOfLongestSubstring(Solution(), " "))

@@ -1,3 +1,6 @@
+"""
+Median of Two Sorted Arrays
+"""
 import math
 from typing import List
 
