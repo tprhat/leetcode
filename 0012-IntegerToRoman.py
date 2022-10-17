@@ -15,5 +15,3 @@ class Solution:
             c, num = divmod(num, i)
             s += c * d[i]
         return s
-
-print(Solution.intToRoman(Solution(), 3))
