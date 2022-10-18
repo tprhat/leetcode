@@ -13,6 +13,7 @@ class Solution:
         s = ""
         y = x[0]
         cnt = 1
+        # count the number of occurances of each sequence with same numbers
         for i in range(1, len(x)):
             if x[i] == y:
                 cnt += 1
