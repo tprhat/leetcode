@@ -6,12 +6,9 @@ https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/descripti
 class Solution:
     def removeDuplicates(self, s: str) -> str:
         stack = []
-        for i in range(len(s)):
-            if not stack:
-                stack.append(s[i])
+        for i in s:
+            if stack and stack[-1] == i:
+                stack.pop()
             else:
-                if stack[-1] == s[i]:
-                    stack.pop()
-                else:
-                    stack.append(s[i])
+                stack.append(i)
         return ''.join(stack)
