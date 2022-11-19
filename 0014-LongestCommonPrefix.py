@@ -16,4 +16,6 @@ class Solution:
             s = set(i)
             if len(s) == 1:
                 prefix.append(s.pop())
+            else:
+                break
         return "".join(prefix)
