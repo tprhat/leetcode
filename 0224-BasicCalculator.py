@@ -3,7 +3,6 @@
 https://leetcode.com/problems/basic-calculator/
 """
 
-
 class Solution:
     def calculate(self, s: str) -> int:
         num, sign, stack = 0, 1, [0]
