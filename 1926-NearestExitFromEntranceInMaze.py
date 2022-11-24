@@ -8,11 +8,9 @@ from typing import List
 
 class Solution:
     def nearestExit(self, maze: List[List[str]], entrance: List[int]) -> int:
-        # BFS
         rows, cols = len(maze), len(maze[0])
         # directions in which we can move
         dirs = ((1, 0), (-1, 0), (0, 1), (0, -1))
-
         start_row, start_col = entrance
         # mark visited cells with '+'
         maze[start_row][start_col] = '+'
