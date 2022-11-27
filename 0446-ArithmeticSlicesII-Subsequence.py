@@ -11,7 +11,6 @@ class Solution:
     def numberOfArithmeticSlices(self, nums: List[int]) -> int:
         dp = [defaultdict(int) for _ in range(len(nums))]
         res = 0
-        print(dp)
         for i in range(len(nums)):
             for j in range(i):
                 # number of elements before j in the arithmetic subsequence that has nums[j]-nums[i] as difference
