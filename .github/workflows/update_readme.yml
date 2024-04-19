@@ -30,6 +30,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Update README" -a
+        git push origin HEAD
       
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
