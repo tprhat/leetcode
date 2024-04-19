@@ -5,7 +5,7 @@ name: Update README
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
