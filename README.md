@@ -4,7 +4,7 @@ My solutions for leetcode tasks written in Python.
 
 Current solve statistics:
 
-easy: 25/787
+easy: 26/787
 
 medium: 44/1637
 
