@@ -6,6 +6,6 @@ Current solve statistics:
 
 easy: 28/787
 
-medium: 47/1637
+medium: 48/1637
 
 hard: 11/695
