@@ -2,6 +2,8 @@
 Zigzag Conversion
 https://leetcode.com/problems/zigzag-conversion/
 """
+
+
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if numRows == 1:
@@ -16,4 +18,4 @@ class Solution:
             if lvl == numRows - 1 or lvl == 0:
                 direction *= -1
 
-        return ''.join(listRows)
+        return "".join(listRows)

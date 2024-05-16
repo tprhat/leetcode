@@ -2,18 +2,18 @@
 947. Most Stones Removed with Same Row or Column
 https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/
 """
+
 from typing import List
 from collections import defaultdict
 
 
 class Solution:
     def removeStones(self, stones: List[List[int]]) -> int:
-
         n = len(stones)
         groupByX = defaultdict(list)
         groupByY = defaultdict(list)
 
-        for i, (x,y) in enumerate(stones):
+        for i, (x, y) in enumerate(stones):
             groupByX[x].append(i)
             groupByY[y].append(i)
 
@@ -41,4 +41,5 @@ class Solution:
 
         return n - disjointSet
 
-print(Solution.removeStones(Solution(), [[0,0],[0,2],[1,1],[2,0],[2,2]]))
+
+print(Solution.removeStones(Solution(), [[0, 0], [0, 2], [1, 1], [2, 0], [2, 2]]))

@@ -2,6 +2,7 @@
 938. Range Sum of BST
 https://leetcode.com/problems/range-sum-of-bst/
 """
+
 from typing import Optional
 
 
@@ -20,4 +21,8 @@ class Solution:
         val = 0
         if low <= root.val <= high:
             val = root.val
-        return val + self.rangeSumBST(root.left, low, high) + self.rangeSumBST(root.right, low, high)
+        return (
+            val
+            + self.rangeSumBST(root.left, low, high)
+            + self.rangeSumBST(root.right, low, high)
+        )

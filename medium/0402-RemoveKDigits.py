@@ -6,4 +6,4 @@ class Solution:
                 stack.pop()
                 k -= 1
             stack.append(digit)
-        return ''.join(stack[:-k or None]).lstrip('0') or '0'
+        return "".join(stack[: -k or None]).lstrip("0") or "0"

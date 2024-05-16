@@ -2,11 +2,11 @@
 380. Insert Delete GetRandom O(1)
 https://leetcode.com/problems/insert-delete-getrandom-o1/description/
 """
+
 import random
 
 
 class RandomizedSet:
-
     def __init__(self):
         self.ids = {}
         self.arr = []
@@ -31,6 +31,7 @@ class RandomizedSet:
 
     def getRandom(self) -> int:
         return random.choice(self.arr)
+
 
 # Your RandomizedSet object will be instantiated and called as such:
 # obj = RandomizedSet()

@@ -2,6 +2,7 @@
 1026. Maximum Difference Between Node and Ancestor
 https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/
 """
+
 from typing import Optional
 
 
@@ -22,7 +23,9 @@ class Solution:
         def helper(node, curr_max, curr_min):
             if not node:
                 return
-            self.result = max(self.result, abs(curr_max - node.val), abs(curr_min - node.val))
+            self.result = max(
+                self.result, abs(curr_max - node.val), abs(curr_min - node.val)
+            )
             curr_max = max(curr_max, node.val)
             curr_min = min(curr_min, node.val)
             helper(node.left, curr_max, curr_min)

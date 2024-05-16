@@ -3,6 +3,7 @@
 https://leetcode.com/problems/make-the-string-great/
 """
 
+
 class Solution:
     def makeGood(self, s: str) -> str:
         stack = []
@@ -16,5 +17,4 @@ class Solution:
                 else:
                     stack.append(s[i])
             i += 1
-        return ''.join(stack)
-
+        return "".join(stack)

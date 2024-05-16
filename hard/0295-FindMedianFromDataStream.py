@@ -3,8 +3,8 @@
 https://leetcode.com/problems/find-median-from-data-stream/
 """
 
-class MedianFinder:
 
+class MedianFinder:
     def __init__(self):
         self.nums = []
 
@@ -15,7 +15,10 @@ class MedianFinder:
         self.nums.sort()
 
         if len(self.nums) % 2 == 0:
-            return (self.nums[int(len(self.nums)/2 - 1)] + self.nums[int(len(self.nums)/2)]) / 2
+            return (
+                self.nums[int(len(self.nums) / 2 - 1)]
+                + self.nums[int(len(self.nums) / 2)]
+            ) / 2
         return self.nums[len(self.nums) // 2]
 
 

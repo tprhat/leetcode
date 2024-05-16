@@ -3,6 +3,7 @@ Minimum Difficulty of a Job Schedule
 https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
 Solution by: https://github.com/wingkwong/leetcode-the-hard-way
 """
+
 from functools import cache
 from typing import List
 
@@ -20,7 +21,7 @@ class Solution:
             if k == d:
                 return max(jobDifficulty[i:])
             # init min difficulty with inf
-            res = float('inf')
+            res = float("inf")
             # cur is the max difficulty we've seen so far on day `k`
             # init current max with 0
             cur = 0

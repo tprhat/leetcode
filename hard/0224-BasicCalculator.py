@@ -11,22 +11,24 @@ class Solution:
         for c in s:
             if c.isdigit():
                 num = num * 10 + int(c)
-            elif c == ' ':
+            elif c == " ":
                 continue
-            elif c == '+':
+            elif c == "+":
                 stack[-1] += num * sign
                 num = 0
                 sign = 1
-            elif c == '-':
+            elif c == "-":
                 stack[-1] += num * sign
                 num = 0
                 sign = -1
-            elif c == '(':
+            elif c == "(":
                 stack.extend(([sign, 0]))  # add sign and 0 to sum inside brackets
                 sign = 1
                 num = 0
-            elif c == ')':
-                lastNum = (stack.pop() + num * sign) * stack.pop()  # 1.pop()=>sum inside, 2.pop()=>sign (+-1)
+            elif c == ")":
+                lastNum = (
+                    stack.pop() + num * sign
+                ) * stack.pop()  # 1.pop()=>sum inside, 2.pop()=>sign (+-1)
                 stack[-1] += lastNum
                 sign = 1
                 num = 0

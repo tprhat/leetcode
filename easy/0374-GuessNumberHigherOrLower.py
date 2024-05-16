@@ -11,6 +11,7 @@ https://leetcode.com/problems/guess-number-higher-or-lower/description/
 #          otherwise return 0
 # def guess(num: int) -> int:
 
+
 class Solution:
     def guessNumber(self, n: int) -> int:
         lower = 1

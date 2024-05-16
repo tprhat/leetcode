@@ -2,6 +2,7 @@
 2225. Find Players With Zero or One Losses
 https://leetcode.com/problems/find-players-with-zero-or-one-losses/
 """
+
 from collections import defaultdict
 from typing import List
 
@@ -23,4 +24,21 @@ class Solution:
 
         return [sorted(zero_losses), sorted(one_loss)]
 
-print(Solution.findWinners(Solution(), matches=[[1,3],[2,3],[3,6],[5,6],[5,7],[4,5],[4,8],[4,9],[10,4],[10,9]]))
+
+print(
+    Solution.findWinners(
+        Solution(),
+        matches=[
+            [1, 3],
+            [2, 3],
+            [3, 6],
+            [5, 6],
+            [5, 7],
+            [4, 5],
+            [4, 8],
+            [4, 9],
+            [10, 4],
+            [10, 9],
+        ],
+    )
+)

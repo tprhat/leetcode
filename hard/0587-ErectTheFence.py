@@ -2,12 +2,12 @@
 587. Erect the Fence
 https://leetcode.com/problems/erect-the-fence/
 """
+
 from typing import List
 
 
 class Solution:
     def outerTrees(self, trees: List[List[int]]) -> set[tuple]:
-
         # https://www.youtube.com/watch?v=eu6i7WJeinw
         def CrossProduct(p1, p2, p3):
             a = p2[0] - p1[0]

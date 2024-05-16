@@ -1,6 +1,7 @@
 from typing import List, Any
 from collections import deque
 
+
 class Solution:
     def deckRevealedIncreasing(self, deck: List[int]) -> deque[Any]:
         q = deque()

@@ -8,4 +8,4 @@ class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
         res = reduce(lambda x, y: x ^ y, nums)
         res = res ^ k
-        return bin(res).count('1')
+        return bin(res).count("1")

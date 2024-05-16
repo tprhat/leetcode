@@ -2,12 +2,15 @@
 1235. Maximum Profit in Job Scheduling
 https://leetcode.com/problems/maximum-profit-in-job-scheduling/
 """
+
 from bisect import bisect_left
 from typing import List
 
 
 class Solution:
-    def jobScheduling(self, startTime: List[int], endTime: List[int], profit: List[int]) -> int:
+    def jobScheduling(
+        self, startTime: List[int], endTime: List[int], profit: List[int]
+    ) -> int:
         dp = [[0, 0]]
 
         def f(x):
@@ -32,5 +35,11 @@ class Solution:
 #                                                           answer
 
 
-print(Solution.jobScheduling(Solution(), startTime=[1, 2, 3, 4, 6], endTime=[3, 5, 10, 6, 9],
-                             profit=[20, 20, 100, 70, 60]))
+print(
+    Solution.jobScheduling(
+        Solution(),
+        startTime=[1, 2, 3, 4, 6],
+        endTime=[3, 5, 10, 6, 9],
+        profit=[20, 20, 100, 70, 60],
+    )
+)

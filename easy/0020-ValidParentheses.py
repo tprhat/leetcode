@@ -6,8 +6,8 @@ https://leetcode.com/problems/valid-parentheses/
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        open_par = '([{'
-        close_par = ')]}'
+        open_par = "([{"
+        close_par = ")]}"
         stack = []
         for i in s:
             if stack:

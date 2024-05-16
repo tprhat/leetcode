@@ -9,6 +9,7 @@ https://leetcode.com/problems/delete-node-in-a-linked-list/
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def deleteNode(self, node):
         """

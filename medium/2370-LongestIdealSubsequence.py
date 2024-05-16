@@ -4,7 +4,7 @@ class Solution:
         best = [0] * 26
 
         for c in s:
-            curr = ord(c) - ord('a')
+            curr = ord(c) - ord("a")
 
             start = max(0, curr - k)
             end = min(25, curr + k)

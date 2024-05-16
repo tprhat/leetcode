@@ -2,6 +2,7 @@
 124. Binary Tree Maximum Path Sum
 https://leetcode.com/problems/binary-tree-maximum-path-sum/
 """
+
 from math import inf
 from typing import Optional
 
@@ -24,8 +25,14 @@ class Solution:
             if node:
                 left = walk(node.left)
                 right = walk(node.right)
-                
-                max_path = max(max_path, node.val + left + right, node.val, node.val + left, node.val + right)
+
+                max_path = max(
+                    max_path,
+                    node.val + left + right,
+                    node.val,
+                    node.val + left,
+                    node.val + right,
+                )
                 return max(node.val, node.val + left, node.val + right)
             return 0
 

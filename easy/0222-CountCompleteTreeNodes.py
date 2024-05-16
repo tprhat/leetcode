@@ -2,6 +2,7 @@
 222. Count Complete Tree Nodes
 https://leetcode.com/problems/count-complete-tree-nodes/description/
 """
+
 from typing import Optional
 
 

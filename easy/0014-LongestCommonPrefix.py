@@ -9,6 +9,7 @@ from typing import List
 # zip(*strs) Iterate over all words in parallel, producing tuples with a letter from each one.
 # It will stop iteration on the shortest word.
 
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         prefix = []

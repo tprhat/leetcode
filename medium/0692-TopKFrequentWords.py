@@ -2,6 +2,7 @@
 692. Top K Frequent Words
 https://leetcode.com/problems/top-k-frequent-words/
 """
+
 from collections import Counter
 from heapq import nsmallest
 from typing import List

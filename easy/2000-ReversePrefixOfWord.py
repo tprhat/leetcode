@@ -7,4 +7,4 @@ class Solution:
         return word
 
 
-print(Solution().reversePrefix('abcdefd', 'd'))
+print(Solution().reversePrefix("abcdefd", "d"))

@@ -2,7 +2,9 @@
 Add Two Numbers
 https://leetcode.com/problems/add-two-numbers/
 """
+
 from typing import Optional
+
 
 # Definition for singly-linked list.
 class ListNode:
@@ -12,7 +14,9 @@ class ListNode:
 
 
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         l3 = ListNode(0)  # dummyHead, we return l3.next so it does not contain this
         curr = l3
         carry = 0

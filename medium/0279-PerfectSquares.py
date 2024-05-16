@@ -8,7 +8,6 @@ import math
 
 class Solution:
     def numSquares(self, n: int) -> int:
-
         # k = 1
         def isPerfectSquare(N):
             floorSqrt = math.floor(math.sqrt(N))
@@ -19,9 +18,9 @@ class Solution:
 
         # k = 2
         for i in range(n):
-            if i ** 2 > n:
+            if i**2 > n:
                 break
-            if isPerfectSquare(n - i ** 2):
+            if isPerfectSquare(n - i**2):
                 return 2
 
         # k = 3

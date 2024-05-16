@@ -2,6 +2,7 @@
 2256. Minimum Average Difference
 https://leetcode.com/problems/minimum-average-difference/
 """
+
 from math import floor
 from typing import List
 

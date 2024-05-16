@@ -2,6 +2,7 @@
 3Sum Closest
 https://leetcode.com/problems/3sum-closest/
 """
+
 from typing import List
 
 
@@ -11,7 +12,6 @@ class Solution:
         closest_sum = 10e4
         nums = sorted(nums)
         for i in range(0, len(nums) - 1):
-
             if nums[i] == nums[i - 1] and i > 0:
                 continue
 

@@ -8,9 +8,9 @@ class Solution:
     def halvesAreAlike(self, s: str) -> bool:
         n = len(s)
         s = s.lower()
-        vovels = 'aeiou'
+        vovels = "aeiou"
         cnt_left, cnt_right = 0, 0
-        left, right = s[:n // 2], s[n // 2:]
+        left, right = s[: n // 2], s[n // 2 :]
         for i in left:
             if i in vovels:
                 cnt_left += 1

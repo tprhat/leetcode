@@ -2,6 +2,7 @@
 2463. Minimum Total Distance Traveled
 https://leetcode.com/problems/minimum-total-distance-traveled/description/
 """
+
 from typing import List
 
 
@@ -11,9 +12,10 @@ class Solution:
         for i in range(len(factory)):
             factories.extend([factory[i][0]] * factory[i][1])
         n, m = len(robot), len(factories)
-        dp = [[- 1 for _ in range(m)] for _ in range(n)]
+        dp = [[-1 for _ in range(m)] for _ in range(n)]
         robot.sort()
         factories.sort()
+
         def solve(i, j):
             if i == n:
                 return 0

@@ -7,7 +7,7 @@ class Solution(object):
         bitmask = 0
 
         for c in word:
-            char_index = ord(c) - ord('a')
+            char_index = ord(c) - ord("a")
             bitmask ^= 1 << char_index
             result += count[bitmask]
             for i in range(10):

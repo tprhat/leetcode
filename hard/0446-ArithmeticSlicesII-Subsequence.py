@@ -2,6 +2,7 @@
 446. Arithmetic Slices II - Subsequence
 https://leetcode.com/problems/arithmetic-slices-ii-subsequence/description/
 """
+
 # https://leetcode.com/problems/arithmetic-slices-ii-subsequence/solutions/2852788/python3-dp-explained-o-n-2/
 from collections import defaultdict
 from typing import List
